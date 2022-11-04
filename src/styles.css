@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #888;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #5ab9a9;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.search-box input {
+  width: 100%;
+  display: block;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+.search-box:focus-within {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.text-or {
+  font-size: 1.1em;
+  color: #0a5e50;
+}
+.input-group-prepend {
+  padding: 14px;
+  background-color: #5ab9a9;
+  border: 1px solid #5ab9a9;
+}
+.text-search-info {
+  margin-top: 10px;
+}
+
+.random-fetcher {
+  margin-top: 2%;
+}
+
+.random-fetcher,
+h3 {
+  text-align: center;
+  font-size: 1.2em;
+  text-align: center;
+  color: #113cfc;
+}
+
+.random-fetcher:hover,
+.random-fetcher:active {
+  color: #ff670f;
+  cursor: pointer;
+}
+
+.results {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.result {
+  width: 100%;
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.result:hover {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.result h3 {
+  color: #888;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.result p {
+  color: #313131;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.result p .searchmatch {
+  font-weight: 600;
+}
+.result a {
+  display: inline-block;
+  background-color: #4fd3c4;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.result a:hover {
+  background-color: #6348a1;
+}
